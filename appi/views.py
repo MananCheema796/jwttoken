@@ -22,6 +22,7 @@ class UserApi(APIView):
             'msg': 'something went Wrong'},
             status=status.HTTP_400_BAD_REQUEST)
         serializer.save()
+        print("Manan")
         user= User.objects.get(email=serializer.data['email'])
         refresh = RefreshToken.for_user(user)
         return Response( {'data':serializer.data,
