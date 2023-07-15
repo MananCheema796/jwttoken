@@ -55,3 +55,12 @@ class Student(models.Model):
     name = models.CharField(max_length=255)
     roll = models.IntegerField(unique=True)
     city = models.CharField(max_length=255)
+
+
+
+
+
+
+
+
+
