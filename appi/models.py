@@ -64,3 +64,4 @@ class Student(models.Model):
 
 
 
+print("Manan")
